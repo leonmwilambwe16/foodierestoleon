@@ -1,4 +1,4 @@
-import express from 'express';
+  import express from 'express';
 import dotenv from "dotenv";
 import authRoute from "./Route/auth.Route.js";
 import productRoute from './Route/product.Route.js';
