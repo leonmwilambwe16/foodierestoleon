@@ -1,0 +1,188 @@
+.navigation-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 17px;
+  border-bottom: 1px solid gray;
+  height: 70px;
+  z-index: 10;
+  position: relative;
+}
+.food-logo {
+  font-size: 25px;
+}
+.logocontainer h4 span {
+  color: rgb(235, 82, 11);
+}
+.logocontainer h4 {
+  color: rgb(97, 97, 97);
+}
+
+.logocontainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+.auth-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.auth-dropdown > button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.auth-dropdown > button:hover {
+  background-color: #45a049;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  min-width: 140px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+.list-menu li {
+  align-items: center;
+  text-align: center;
+  margin: 4px 5px;
+  color: rgb(97, 97, 97);
+}
+.list-menu li span {
+  margin: 4px 5px;
+  text-align: center;
+  color: rgb(97, 97, 97);
+}
+.cart-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: rgb(97, 97, 97);
+}
+.cart-login button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-logo {
+  font-size: 14px;
+}
+.list-menu li:hover {
+  color: rgb(235, 82, 11);
+  transition: 0.5s;
+}
+.list-content {
+  display: flex;
+}
+.humberger-menu {
+  display: none;
+  cursor: pointer;
+}
+.cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.cart-login button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+}
+.cart-login button:hover {
+  background-color: #0056b3;
+}
+.cart-icon:hover {
+  color: rgb(235, 82, 11);
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: rgb(235, 82, 11);
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+}
+.cart-icon-wrapper {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .list-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+  }
+  .list-content.show {
+    display: flex;
+  }
+  .list-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .humberger-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,96 @@
+.contact-container {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/contactimgback.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: auto;
+}
+.menu-contact-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+.social-medial a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.social-medial a :hover {
+  color: rgb(235, 82, 11);
+  transition: all 0.5s ease-in-out;
+}
+
+.social-medial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: white;
+}
+
+.foo-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.logo-food-cont {
+  font-size: 25px;
+}
+.foo-logo h4 span {
+  color: rgb(235, 82, 11);
+  z-index: 3;
+  font-weight: bold;
+}
+.foo-logo h4 {
+  z-index: 3;
+  font-weight: bold;
+  color: white;
+}
+.text-contact p {
+  font-size: 13px;
+  z-index: 3;
+  margin-top: 10px;
+  color: white;
+}
+
+.carphoto {
+  width: 200px;
+  height: 100px;
+  background-image: url(../assets/saldveg.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  border-radius: 10px;
+}
+.menulist-cont ul li {
+  list-style-type: none;
+  font-size: 13px;
+  z-index: 2;
+  color: white;
+}
+.menulist-cont ul li:hover {
+  color: rgb(235, 82, 11);
+  cursor: pointer;
+  font-weight: bold;
+}
+.menulist-cont p {
+  color: white;
+  font-size: 13px;
+}
+.box-footer h4 {
+  color: rgb(235, 82, 11);
+}
+
+@media (max-width: 768px) {
+  .menu-contact-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
